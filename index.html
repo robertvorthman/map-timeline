@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Map</title>
+
+    <link href="css/bootstrap/bootstrap.darkly.css" rel="stylesheet">
+    
+    <link href="js/lib/dc.min.css" rel="stylesheet">
+    <link href="js/lib/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top" style="margin-bottom:1px">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">...</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <div class="container-fluid" style="padding:0">
+      
+      <div id="map-container"></div>
+      <div id="timeline"></div>
+      
+
+    </div> <!-- /container -->
+    
+    <script type="text/javascript" src="js/lib/crossfilter.min.js"></script>
+    <script type="text/javascript" src="js/lib/d3.min.js"></script>
+    <script type="text/javascript" src="js/lib/dc.min.js"></script>
+    <script type="text/javascript" src="js/lib/Cesium/Cesium.js"></script>
+    <script type="text/javascript" src="js/lib/CesiumHeatmap.js"></script>
+    <script type="text/javascript" src="js/lib/supercluster.min.js"></script>
+    
+    <script type="text/javascript" src="js/Map.js"></script>
+    <script type="text/javascript" src="js/Timeline.js"></script>
+    <script type="text/javascript" src="js/App.js"></script>
+  </body>
+</html>
