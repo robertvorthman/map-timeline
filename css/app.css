@@ -3,9 +3,29 @@ html, body, #map-container {
 }
 
 #map-container{
-    height:400px;
+    height: calc(100vh - 50px - 180px);
 }
 
 #timeline{
-  height: 150px;
+  height: 180px;
+  width: 100%;
+  position: absolute;
+}
+
+#timeline-button-container{
+  position: absolute;
+  top: -27px;
+  left: 141px;
+}
+
+.dc-chart text{
+  fill: hsl(0, 0%, 40%);
+}
+
+.dc-chart .axis line, .dc-chart .axis path {
+  stroke: hsl(0, 0%, 20%);
+}
+
+.navbar-static-top{
+  margin-bottom: 0;
 }

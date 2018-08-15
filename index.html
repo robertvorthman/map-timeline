@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Map</title>
+    <title>Geo</title>
 
-    <link href="css/bootstrap/bootstrap.darkly.css" rel="stylesheet">
+    <link href="css/bootstrap/css/bootstrap.cyborg.css" rel="stylesheet">
     
     <link href="js/lib/dc.min.css" rel="stylesheet">
     <link href="js/lib/Cesium/Widgets/widgets.css" rel="stylesheet">
@@ -17,22 +17,30 @@
 
   <body>
 
-    <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-static-top" style="margin-bottom:1px">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">...</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-        </div><!--/.nav-collapse -->
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Geo</a>
       </div>
-    </nav>
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-download-alt"></span> Export</a></li>
+      </ul>
+    </div>
+  </nav>
+
 
 
     <div class="container-fluid" style="padding:0">
       
       <div id="map-container"></div>
-      <div id="timeline"></div>
+      <div id="timeline">
+        <div id="timeline-button-container" class="btn-group btn-group-xs" role="group">
+          <button class="btn btn-default">Past Week</button>
+          <button class="btn btn-default">Past Month</button>
+        </div>
+      </div>
       
 
     </div> <!-- /container -->
